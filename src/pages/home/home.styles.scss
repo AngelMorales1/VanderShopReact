@@ -1,0 +1,80 @@
+.banner{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    .img{
+        background-image: url("../../assets/img/Nike-demanda-al-disenador-de-Lil-Nas-X-Satan-Shoes.jpg");
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -450px;
+        bottom: 0;
+        background-color: rgba( 0,0,0, 0.2);
+        display: flex;
+        align-items: center;
+        .content{
+            padding: 10%;
+        }
+    }
+}
+
+.main{
+    width: 100%; 
+    .popular{
+        width: 100%;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 30px;
+        .btn-div{
+            display: flex;
+            flex-direction: row;
+            grid-gap: 60px;
+        }
+    }
+
+    .sexos-cat{
+        text-align: flex-start;
+        .cat-sexos-div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 15px;
+        }
+    }
+    
+    .novedades{
+        margin: 60px 0 ;
+        // items del slider
+        .swiper-slide{
+            padding: 2px;
+            .swiper-item{
+                width: 100%;
+                margin: 2px;
+                img{
+                    width: 100%;
+                }
+                &:hover{
+                    outline: 1px solid black;
+                }
+            }
+           
+        }
+        
+        // botones del slider novedades
+        .navigation{
+            color: black;
+            background: white;
+            width: 60px;
+            border: 1px solid black;
+            &:after{
+                content: "";
+            }
+        }
+    }
+}

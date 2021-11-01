@@ -1,0 +1,13 @@
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    label{
+        padding: 10px;
+    }
+    .input{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black
+    }
+}

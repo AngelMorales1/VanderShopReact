@@ -1,0 +1,66 @@
+.navbar{
+    width: 100%;
+    height: 60px;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 99;
+        font-size: 35px;
+        color: black;
+        text-decoration: none;
+        p{
+            padding-left: 5px;
+            font-size: 30px;
+        }
+    }
+    .inputs{
+        display: flex;
+        align-items: center;
+        .input{
+            border: none;
+            width: 140px;
+            height: 32px;
+            padding: 0 45px 0 5px;
+            border-bottom: 1px solid black;
+            &:focus{
+                outline: none;
+                &::placeholder{
+                    color: transparent;
+                }
+            }
+        }
+        .search{
+            font-size: 25px;
+            color: #050505b4;
+            position: relative;
+            right: 25px;
+        }
+        .shopping{
+            font-size: 25px;
+            color: #050505b4;
+        }
+
+        .login{
+            text-decoration: none;
+            color: #050505b4;
+            display: flex;
+            flex-direction: row;
+            padding: 0 20px;
+            align-items: flex-end;
+            font-size: 22px;
+            p{
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    .navbar{
+        padding:0 20px;
+    }
+}
